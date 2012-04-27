@@ -1,0 +1,13 @@
+# Rule to load TI Bluetooth driver
+#
+# detect actual TI BT rfkill entry name:
+#
+KERNEL=="rfkill*", ATTRS{name}=="Bluetooth", \
+ATTRS{soft}=="0", \
+RUN+="/sbin/modprobe bt_drv"
+#
+# detect future TI BT rfkill entry name:
+#
+KERNEL=="rfkill*", ATTRS{name}=="wilink_bt", \
+ATTRS{soft}=="0", \
+RUN+="/sbin/modprobe bt_drv"

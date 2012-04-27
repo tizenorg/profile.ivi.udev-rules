@@ -1,0 +1,11 @@
+#
+# TI wilink platform drivers rule
+#
+SUBSYSTEM!="platform", GOTO="ti_wilink_rule_end"
+#
+# Detect platform device: btwilink
+#
+DEVPATH=="/devices/platform/btwilink", RUN+="/sbin/modprobe btwilink"
+LABEL="btwilink_installed"
+
+LABEL="ti_wilink_rule_end"

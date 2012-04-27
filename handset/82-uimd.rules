@@ -1,0 +1,11 @@
+# uim rule to set TI Share Transport UART line discipline
+#
+# detect actual TI BT rfkill entry name:
+#
+KERNEL=="rfkill*", ATTRS{name}=="Bluetooth", ATTRS{hard}=="0", \
+RUN+="/usr/bin/uimd"
+#
+# detect future TI BT rfkill entry name:
+#
+KERNEL=="rfkill*", ATTRS{name}=="wilink_bt", ATTRS{hard}=="0", \
+RUN+="/usr/bin/uimd"

@@ -1,0 +1,23 @@
+* Mon Feb 13 2012 Rusty Lynch <rusty.lynch@intel.com> - 0.11
+- removing all but the netbook subpackages
+
+* Wed May 25 2011 Chris Ferron <chris.e.ferron@linux.intel.com> - 0.11
+- updated spec file to change systemctl as a requires to the package systemd" 
+
+* Wed May 11 2011 Chris Ferron <chris.e.ferron@linux.intel.com> - 0.11
+- FEA#16109 - [FEA] Implement SystemD as MeeGo init provide
+- ajusted spec and packaging accordingly to enable systemd.
+
+
+* Thu Apr 12 2011 Chen Jie <jie.a.chen@intel.com> - 0.11
+- Added keymap&rule of BTC USB remote controller for TV
+
+* Tue Mar 29 2011 Anas Nashif <anas.nashif@intel.com> - 0.11
+- Fixed rfkill install
+
+* Tue Mar 29 2011 Anas Nashif <anas.nashif@intel.com> - 0.10
+- Initial version, replacing individual packages dealing with udev rules
+  udev-rules-netbook, udev-rules-nokia-n900, udev-rules-handset-mid,
+  udev-rules-tablet-oaktrail
+   
+

@@ -1,0 +1,7 @@
+# Share Transport rule to set TI Share Transport
+#
+# detect TI WL12xx chip on sdio bus:
+#
+ACTION=="add", SUBSYSTEM=="drivers", \
+ENV{DEVPATH}=="/bus/sdio/drivers/wl12??_sdio", \
+RUN+="/sbin/modprobe st_drv"

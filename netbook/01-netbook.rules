@@ -1,0 +1,11 @@
+SUBSYSTEMS=="usb", ATTR{idVendor}=="04f2", ATTR{idProduct}=="b071", ATTR{power/level}="auto"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="04f2", ATTR{idProduct}=="b036", ATTR{power/level}="auto"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="064e", ATTR{idProduct}=="d101", ATTR{power/level}="auto"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="0c45", ATTR{idProduct}=="62c0", ATTR{power/level}="auto"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="046d", ATTR{idProduct}=="c063", ATTR{power/level}="auto"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="0d62", ATTR{idProduct}=="2106", ATTR{power/level}="auto"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="05e3", ATTR{idProduct}=="0505", ATTR{power/level}="auto"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="0b05", ATTR{idProduct}=="b700", ATTR{power/level}="auto"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="0ac8", ATTR{idProduct}=="c33f", ATTR{power/level}="auto"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="6773", ATTR{power/level}="auto"
+

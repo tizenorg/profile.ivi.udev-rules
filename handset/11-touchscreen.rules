@@ -1,0 +1,1 @@
+SUBSYSTEM=="input", KERNEL=="event*", ATTRS{name}=="cp_tm1217_touchscreen_0", SYMLINK+="input/touchscreen"

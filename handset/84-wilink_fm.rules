@@ -1,0 +1,7 @@
+# Rule to load TI FM driver
+#
+# detect actual TI BT rfkill entry name
+# sleep 6 seconds (wait for firmware download completion)
+KERNEL=="rfkill*", ATTRS{name}=="Bluetooth", \
+ATTRS{state}!="0", \
+RUN+="/bin/sleep 6", RUN+="/sbin/modprobe fm_drv"

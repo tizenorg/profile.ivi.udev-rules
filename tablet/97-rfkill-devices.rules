@@ -1,0 +1,6 @@
+# In Oaktrail Tablet, flip the left bottom switch will enable/disable the
+# touchscreen.  We use this feature to enable/disable the rfkill devices.
+
+# Sitronix Technology Corp., LTD. ST7002 Touch Demo No.1
+ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1403", ATTRS{idProduct}=="5001", RUN+="/etc/init.d/rfkill.sh add"
+ACTION=="remove", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1403", ATTRS{idProduct}=="5001", RUN+="/etc/init.d/rfkill.sh remove"

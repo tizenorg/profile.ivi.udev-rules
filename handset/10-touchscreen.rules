@@ -1,0 +1,1 @@
+ATTRS{name}=="mrst_touchscreen", KERNEL=="event*", SYMLINK+="input/touchscreen"
