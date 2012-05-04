@@ -1,3 +1,6 @@
+* Fri May 04 2012 Lin Yang <lin.a.yang@intel.com>
+- test release infrastructure
+
 * Mon Feb 13 2012 Rusty Lynch <rusty.lynch@intel.com> - 0.11
 - removing all but the netbook subpackages
 
