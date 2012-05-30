@@ -1,3 +1,6 @@
+* Wed May 30 2012 Junfeng Dong <junfeng.dong@intel.com>
+- Clean up spec file for packaging.
+
 * Fri May 04 2012 Lin Yang <lin.a.yang@intel.com>
 - test release infrastructure
 

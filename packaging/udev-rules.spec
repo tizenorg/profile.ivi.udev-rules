@@ -8,7 +8,7 @@ URL: http://www.meego.com
 License: GPLv2
 Group: System/Base
 BuildArch: noarch
-Source0: udev-rules-%{version}.tar.bz2
+Source0: %{name}-%{version}.tar.bz2
 Requires: udev
 Requires(post):   systemd
 Requires(preun):  systemd
@@ -30,7 +30,7 @@ Group: System/Base
 Netbook udev rules
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}
 
 %build
 
