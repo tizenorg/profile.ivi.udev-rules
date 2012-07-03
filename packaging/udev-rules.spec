@@ -1,6 +1,6 @@
-%define udev_libdir /lib/udev
+%define udev_libdir /usr/lib/udev
   
-Summary: MeeGo udev Rules
+Summary: Tizen IVI udev Rules
 Name: udev-rules
 Version: 0.11
 Release: 1
@@ -13,14 +13,11 @@ Requires: udev
 Requires(post):   systemd
 Requires(preun):  systemd
 Requires(postun): systemd 
-Obsoletes: moblin-udev-rules <= 0.1-4.1
+#Obsoletes: moblin-udiev-rules <= 0.1-4.1
 
 %description
 This package includes some meego specific udev rules, which express 
-some of handles/actions for meego related udev event, such as 
-USB aotususpend features from some tested device on top of meego
-platform. 
-
+some of handles/actions for Tizen-related udev events. 
 
 %package netbook
 Summary:    Netbook udev rules
