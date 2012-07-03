@@ -1,3 +1,6 @@
+* Tue Jul  3 20:32:12 UTC 2012 - tracy.graydon@intel.com
+- Fix the makefile lib dir (/usr/lib/udev) 
+
 * Tue Jul  3 18:05:08 UTC 2012 - tracy.graydon@intel.com
 - Update udev install dir to /usr/lib/udev
 - Remove a couple of old MeeGo references and clean up description in spec 
