@@ -4,27 +4,20 @@ Summary: Tizen IVI udev Rules
 Name: udev-rules
 Version: 0.11
 Release: 1
-URL: http://www.meego.com
-License: GPLv2
-Group: System/Base
+License: GPL-2.0
+Group: Automotive/Hardware Adaptation
 BuildArch: noarch
 Source0: %{name}-%{version}.tar.bz2
-Requires: udev
-Requires(post):   systemd
-Requires(preun):  systemd
-Requires(postun): systemd 
-#Obsoletes: moblin-udiev-rules <= 0.1-4.1
 
 %description
-This package includes some meego specific udev rules, which express 
+This package includes some profile specific udev rules, which express
 some of handles/actions for Tizen-related udev events. 
 
-%package netbook
-Summary:    Netbook udev rules
-Group: System/Base
+%package ivi
+Summary: IVI udev rules
 
-%description netbook
-Netbook udev rules
+%description ivi
+This package installs udev rules that are specific to IVI profile
 
 %prep
 %setup -q -n %{name}-%{version}
@@ -33,27 +26,12 @@ Netbook udev rules
 
 %install
 rm -rf %{buildroot}
-make -C netbook install DESTDIR=%{buildroot}
+make -C ivi install DESTDIR=%{buildroot}
 
-%post
-systemctl daemon-reload
-systemctl reload-or-try-restart udev.service
-systemctl reload-or-try-restart udev-retry.service
-systemctl reload-or-try-restart udev-settle.service
-
-%preun
-systemctl stop udev.service
-systemctl stop udev-retry.service
-systemctl stop udev-settle.service
-
-%postun
-systemctl daemon-reload
-
- 
 %clean
 rm -rf %{buildroot}
 
-%files netbook
+%files ivi
 %defattr(0644, root, root, 0755)
-%attr(0644,root,root) %{udev_libdir}/rules.d/01-netbook.rules
-
+%attr(0644,root,root) %{udev_libdir}/rules.d/99-atkbd.rules
+%attr(0644,root,root) %{udev_libdir}/rules.d/99-dri.rules

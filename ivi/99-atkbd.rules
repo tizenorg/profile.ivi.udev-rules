@@ -1,0 +1,1 @@
+KERNEL=="id", SUBSYSTEM=="dmi", ATTR{sys_vendor}=="VMware, Inc.", RUN+="/sbin/modprobe atkbd"
