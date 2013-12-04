@@ -35,3 +35,4 @@ rm -rf %{buildroot}
 %defattr(0644, root, root, 0755)
 %attr(0644,root,root) %{udev_libdir}/rules.d/99-atkbd.rules
 %attr(0644,root,root) %{udev_libdir}/rules.d/99-neard.rules
+%attr(0644,root,root) %{udev_libdir}/rules.d/99-tty.rules

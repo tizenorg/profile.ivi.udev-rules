@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", KERNEL=="tty1", GROUP="app", OWNER="app"
