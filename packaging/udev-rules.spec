@@ -37,3 +37,4 @@ rm -rf %{buildroot}
 %attr(0644,root,root) %{udev_libdir}/rules.d/99-neard.rules
 %attr(0644,root,root) %{udev_libdir}/rules.d/99-tty.rules
 %attr(0644,root,root) %{udev_libdir}/rules.d/99-egalax.rules
+%attr(0644,root,root) %{udev_libdir}/rules.d/70-tun.rules
