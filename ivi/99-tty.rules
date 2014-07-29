@@ -1,1 +1,1 @@
-SUBSYSTEM=="tty", KERNEL=="tty1", GROUP="app", OWNER="app"
+SUBSYSTEM=="tty", KERNEL=="tty1", GROUP="users", MODE="0660"
