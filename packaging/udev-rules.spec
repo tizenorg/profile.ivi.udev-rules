@@ -2,7 +2,7 @@
   
 Summary: Tizen IVI udev Rules
 Name: udev-rules
-Version: 0.12
+Version: 0.13
 Release: 1
 License: GPL-2.0
 Group: Automotive/Hardware Adaptation

@@ -1,4 +1,8 @@
-* Fri Nov 29 2013 Chengyi Zhao <chengyi1.zhao@archermind.com>
+* Thu Jul 31 2014 Mikko Ylinen <mikko.ylinen@intel.com> accepted/tizen/ivi/20140410.203555-2-g51591e8
+- Add 99-dri.rules with video permission setting
+- Make tty1 rw for 'users' group
+
+* Fri Nov 29 2013 Chengyi Zhao <chengyi1.zhao@archermind.com> None
 - Fix TIVI-1665: [3.0] The neard service is not enabled
 - Use the udev rule instead of the default startup
 
